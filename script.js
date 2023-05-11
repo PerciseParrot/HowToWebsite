@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("mySideBar").style.width = "200px";
+    document.getElementById("sideBar").style.width = "200px";
     document.getElementById("overlay").style.display = "block";
     setTimeout(function() {
         document.getElementById("overlay").style.opacity = "0.3";
@@ -7,7 +7,7 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("mySideBar").style.width = "0px";
+    document.getElementById("sideBar").style.width = "0px";
     document.getElementById("overlay").style.opacity = "0.0"
     setTimeout(function() {
         document.getElementById("overlay").style.display = "none";
