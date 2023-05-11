@@ -1,8 +1,8 @@
-* {
+/** {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+}*/
 
-.sidenav {
+.sidebar {
     height: 100%;
     width: 0px;
     position: fixed;
@@ -15,7 +15,7 @@
     z-index: 30;
 }
 
-.sidenav a {
+.sidebar a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -25,11 +25,11 @@
     transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidebar a:hover {
     color: #f1f1f1;
 }
 
-.sidebar .closebtn {
+.sidebar .closenavbtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -37,13 +37,44 @@
     margin-left: 50px;
 }
 
-.openbtn {
+.opennavbtn {
     font-size: 20px;
+    margin-left: 20px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
+    background-color: #ffffff;
+    color: #818181;
     padding: 10px 15px;
+    transition: 0.5s;
     border: none;
+}
+
+.opennavbtn:hover {
+    background-color: #f1f1f1;
+}
+
+.headbar {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    position:fixed;
+    transition: all 0.5s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.144);
+}
+
+.headbar a {
+    color:#333e2e;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.headbar a:hover {
+    text-decoration: underline; 
 }
 
 #overlay {
