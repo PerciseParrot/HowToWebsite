@@ -1,6 +1,7 @@
-/** {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}*/
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .sidebar {
     height: 100%;
@@ -76,6 +77,13 @@
 .headbar a:hover {
     text-decoration: underline; 
 }
+
+.logo-image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+}   
 
 #overlay {
     position: fixed;
