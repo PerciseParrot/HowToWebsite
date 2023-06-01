@@ -37,9 +37,6 @@
             padding-right: 200px;
         }
 
-       
-    
-
         .ers-image{
             width: 100%;
         }
@@ -51,13 +48,12 @@
             margin-bottom: 300px;
         }
 
-        
-
         .footer-container{
             background-color: white;
             display: flex;
             padding: 5px;
         }
+
         .text{
             flex: 1;
             align-items: center;
@@ -65,6 +61,7 @@
             font-size: 30px;
             padding-top: 180px;
         }
+
         li{
             margin-bottom: 15px;
         }
@@ -72,35 +69,37 @@
 </head>
 
 <body>
-    <div id="overlay"></div>
+    <div id="overlay" onclick="closeNav()"></div>
 
-    <div class="headbar">
+    <div class="headbar" id="headbar">
         <button class="opennavbtn" onclick="openNav()">&#9776;</button>
         <img class="logo-image" src="Logo.png">
         <div>
             <a href="index.html">Startseite</a>
             <a href="https://www.ers-hameln.de/">Eugen-Reintjes</a>
             <a href="https://google.de">Google</a>
-            
         </div>
 
         <form>
             <input type="text" placeholder="Suche..." id="search">
-            <button  type="submit">Suchen</button>
+            <button type="submit">Suchen</button>
         </form>    
     </div>
 
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closeanvbtn" onclick="closeNav()">×</a>
-        <a href="google.com">Test 1</a>
-        <a href="google.com">Test 2</a>
-        <a href="google.com">Test 3</a>
+        <a href="javascript:void(0)" onclick="document.getElementById().scrollIntoView({behavior: 'smooth'})">Unser Team</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('Luca').scrollIntoView({behavior: 'smooth'})">Luca</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('Leo').scrollIntoView({behavior: 'smooth'})">Leo</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('Luis').scrollIntoView({behavior: 'smooth'})">Luis</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('Klaas').scrollIntoView({behavior: 'smooth'})">Klaas</a>
     </div>
 
     <div class="image-container">
         <img class="test-image" src="gruppenbild.jpg">
     </div>
-    <div class = "container">
+
+    <div class = "container" id="Luca">
         <img class="image" src="Luca.png">
         <div class="text">
             <ul>
@@ -116,7 +115,7 @@
         
     </div>
     
-    <div class = "container">
+    <div class = "container" id="Leo">
         <img class="image" src="Leo.png">
         <div class="text">
             <ul>
@@ -132,7 +131,7 @@
         
     </div>
 
-    <div class = "container">
+    <div class = "container" id="Luis">
         <img class="image" src="Luis.png">
         <div class="text">
             <ul>
@@ -150,7 +149,7 @@
     
     
 
-    <div class = "container">
+    <div class = "container" id="Klaas">
         <img class="image" src="Klaas.png">
         <div class="text">
             <ul>

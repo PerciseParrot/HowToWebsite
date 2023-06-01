@@ -44,21 +44,20 @@
 </head>
 
 <body>
-    <div id="overlay"></div>
+    <div id="overlay" onclick="closeNav()"></div>
 
-    <div class="headbar">
+    <div class="headbar" id="headbar">
         <button class="opennavbtn" onclick="openNav()">&#9776;</button>
         <img class="logo-image" src="Logo.png">
         <div>
             <a href="team.html">Unser Team</a>
             <a href="https://www.ers-hameln.de/">Eugen-Reintjes</a>
             <a href="https://google.de">Google</a>
-            
         </div>
 
         <form>
-            <input type="text" placeholder="Suche..." id="search">
-            <button  type="submit">Suchen</button>
+            <input type="text" placeholder="Suche..." id="searchbar">
+            <button type="submit" class="searchbutton"><i class="fa fa-search"></button>
         </form>    
     </div>
 
