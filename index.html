@@ -54,6 +54,7 @@
         padding-right: 15%;
         padding-top: 5%;
         padding-bottom: 5%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         .container img {
@@ -89,9 +90,13 @@
 
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closeanvbtn" onclick="closeNav()">×</a>
-        <a href="google.com">Test 1</a>
-        <a href="google.com">Test 2</a>
-        <a href="google.com">Test 3</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('1').scrollIntoView({behavior: 'smooth'})">Start</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('2').scrollIntoView({behavior: 'smooth'})">Schritt 1</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('3').scrollIntoView({behavior: 'smooth'})">Schritt 2</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('4').scrollIntoView({behavior: 'smooth'})">Schritt 3</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('5').scrollIntoView({behavior: 'smooth'})">Schritt 4</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('6').scrollIntoView({behavior: 'smooth'})">Schritt 5</a>
+        
     </div>
 <div class="video">
 <video autoplay muted loop src="video_komp.mp4" >  
@@ -99,7 +104,7 @@
 </video>
 </div>
 
- <div class="container">
+ <div class="container" id="1">
     <img src="Bilder/bild1.jpg">
     <section class="text1">
         <br>
@@ -110,7 +115,7 @@
         <p>In dieser Anleitung werde wir Ihnen den grundlegenden Prozess der Erstellung einer Website erklären. Wir werden uns auf die wichtigsten Schritte konzentrieren, angefangen bei der Planung und Konzeption über das Design und die Entwicklung bis hin zur Veröffentlichung Ihrer Website im Internet. Egal, ob Sie ein Anfänger sind, der noch nie zuvor eine Website erstellt hat, oder ob Sie bereits über einige Kenntnisse verfügen und Ihre Fähigkeiten erweitern möchten, diese Anleitung wird Ihnen dabei helfen, Ihre eigene professionelle Website zu gestalten.</p>    
         </section>
     </div>
-    <div class="container">
+    <div class="container" id="2">
         <img src="Bilder/bild5.png" class="bild5">
         <section>
         <br>
@@ -126,7 +131,7 @@
         </section>
     </div>
         
-    <div class="container">
+    <div class="container" id="3">
         <img src="Bilder/bild8.jpg">
     <section>
         <br>
@@ -142,7 +147,7 @@
         </section>
     </div>
 
-        <div class="container">
+        <div class="container" id="4">
             <img src="Bilder/bild10.jpg">
         <section>
         <br>
@@ -154,7 +159,7 @@
         <br>
         </section>
     </div>
-        <div class="container">
+        <div class="container" id="5">
             <img src="Bilder/bild9.jpg">
         <section>
         <br>
@@ -166,7 +171,7 @@
         <br>
         </section>
     </div>
-        <div class="container">
+        <div class="container" id="6">
             <img src="Bilder/bild2.jpg">
         <section>
         <br>
