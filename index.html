@@ -55,15 +55,38 @@
         padding-top: 5%;
         padding-bottom: 5%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
         }
 
         .container img {
         width: 40%;
         padding-right: 3%;
         }
-        .bild5{
-            height: 20%;
+        @media (max-width: 768px) {
+        .container .text {
+            font-size: 18px; 
         }
+        .container .text h2{
+            font-size: 22px;
+        }
+        .container .text p{
+            font-size: 18px;
+        }
+    }
+    
+        @media (max-width: 480px) {
+        .container .text {
+            font-size: 14px; 
+        }
+        .container .text h2{
+            font-size: 18px;
+        }
+        .container .text p{
+            font-size: 14px;
+        }
+    }
+    
+        
        
     </style>
 
@@ -106,7 +129,7 @@
 
  <div class="container" id="1">
     <img src="Bilder/bild1.jpg">
-    <section class="text1">
+    <section class="text">
         <br>
         <h2>Schritt-für-Schritt-Anleitung zur Erstellung einer Website</h2>
         <br>
@@ -117,7 +140,7 @@
     </div>
     <div class="container" id="2">
         <img src="Bilder/bild5.png" class="bild5">
-        <section>
+        <section class="text">
         <br>
         <h2>Schritt 1</h2>
         <p>Bevor Sie mit der eigentlichen Erstellung Ihrer Website beginnen,Ein paar Webseiten für die Nötige Software für erstallung und Design</p>
@@ -133,7 +156,7 @@
         
     <div class="container" id="3">
         <img src="Bilder/bild8.jpg">
-    <section>
+    <section class="text">
         <br>
         <h2>Schritt 2</h2>
         <p>Bevor Sie mit der eigentlichen Erstellung Ihrer Website beginnen, ist es wichtig, Ihre Ziele und Anforderungen zu definieren. Stellen Sie sich folgende Fragen:</p>
@@ -149,7 +172,7 @@
 
         <div class="container" id="4">
             <img src="Bilder/bild10.jpg">
-        <section>
+        <section class="text">
         <br>
         <h2>Schritt 3: Wählen Sie eine Domain und Hosting </h2>
         <br>
@@ -161,7 +184,7 @@
     </div>
         <div class="container" id="5">
             <img src="Bilder/bild9.jpg">
-        <section>
+        <section class="text">
         <br>
         <h2>Schritt 4: Design und Layout</h2>
         <br>
@@ -173,7 +196,7 @@
     </div>
         <div class="container" id="6">
             <img src="Bilder/bild2.jpg">
-        <section>
+        <section class="text">
         <br>
         <h2>Schritt 5: Inhalte erstellen</h2>
         <br>
