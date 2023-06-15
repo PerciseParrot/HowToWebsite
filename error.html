@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fehlerseite</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .error-container {
+            margin-top: 100px;
+        }
+
+        .error-message {
+            color: #ff5252;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .back-button:hover {
+            background-color: #1a73e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-message">Es ist ein Fehler aufgetreten</h1>
+        <p>Bitte versuche es erneut.</p>
+        <button class="back-button" onclick="goBack()">Erneut versuchen</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    
+</body>
+</html>

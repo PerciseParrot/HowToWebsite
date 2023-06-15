@@ -77,6 +77,9 @@
                 font-size: 14px;
             }
         }
+
+        
+
     </style>
 </head>
 <body>
@@ -91,10 +94,16 @@
             <a href="https://google.de">Google</a>
         </div>
 
-        <form>
-            <input type="text" placeholder="Suche..." id="searchbar">
-        </form>    
-    </div>
+        <form id="search-form" action="error.html">
+            <input type="text" id="search-input" placeholder="Suche">
+            
+        </form>
+    
+        <div id="error-container" style="display: none;">
+            <p class="error-message">Es ist ein Fehler aufgetreten. Bitte versuchen Sie erneut.</p>
+            <button onclick="goBack()">Erneut versuchen</button>
+        </div>
+        </div>
 
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closeanvbtn" onclick="closeNav()">×</a>
@@ -196,5 +205,27 @@
     <div class="footer-container" id="footer">
         Copyright 2023 | HowToWebsite
     </div>
+
+
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var searchInput = document.getElementById("search-input").value;
+
+            // Überprüfe, ob ein Fehler aufgetreten ist (z.B. wenn die Suchanfrage ungültig ist)
+            var error = true; // Setze dies auf "true", wenn ein Fehler aufgetreten ist
+
+            if (error) {
+                window.location.href = "error.html";
+            } else {
+                // Führe die Suchanfrage aus
+                // ...
+            }
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
