@@ -82,9 +82,15 @@
             <a href="https://google.de">Google</a>
         </div>
 
-        <form>
-            <input type="text" placeholder="Suche..." id="search">
-        </form>    
+        <form id="search-form" action="error.html">
+            <input type="text" id="search-input" placeholder="Suche">
+            
+        </form>
+    
+        <div id="error-container" style="display: none;">
+            <p class="error-message">Es ist ein Fehler aufgetreten. Bitte versuchen Sie erneut.</p>
+            <button onclick="goBack()">Erneut versuchen</button>
+        </div>    
     </div>
 
     <div id="sidebar" class="sidebar">
