@@ -34,7 +34,7 @@
 
         .video video{
             width: 100%;
-            padding-top:5% ;
+            padding-top: 100px;
         }
 
         .container {
@@ -77,9 +77,6 @@
                 font-size: 14px;
             }
         }
-
-        
-
     </style>
 </head>
 <body>
@@ -131,7 +128,7 @@
     </div>
 
     <div class="container" id="2">
-        <img src="Bilder/bild5.png" class="bild5">
+        <img src="Bilder/bild5.png">
         <section class="text">
             <br>
             <h2>Schritt 1</h2>
@@ -204,27 +201,5 @@
     <div class="footer-container" id="footer">
         Copyright 2023 | HowToWebsite
     </div>
-
-
-    <script>
-        document.getElementById("search-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            var searchInput = document.getElementById("search-input").value;
-
-            // Überprüfe, ob ein Fehler aufgetreten ist (z.B. wenn die Suchanfrage ungültig ist)
-            var error = true; // Setze dies auf "true", wenn ein Fehler aufgetreten ist
-
-            if (error) {
-                window.location.href = "error.html";
-            } else {
-                // Führe die Suchanfrage aus
-                // ...
-            }
-        });
-
-        function goBack() {
-            window.history.back();
-        }
-    </script>
 </body>
 </html>

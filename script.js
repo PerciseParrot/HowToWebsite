@@ -21,3 +21,7 @@ window.onscroll = function() {
         document.getElementById("headbar").style.height = "100px";
     }
 }
+
+function goBack() {
+    window.history.back();
+}
