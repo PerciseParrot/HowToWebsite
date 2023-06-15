@@ -93,15 +93,10 @@
     font-size: 17px;
 }
 
-.searchbutton {
-    font-size: 20px;
-    margin-left: 20px;
-    cursor: pointer;
-    background-color: #ffffff;
-    color: #818181;
-    padding: 10px 15px;
-    transition: 0.5s;
-    border: none;
+.footer-container{
+    background-color: white;
+    display: flex;
+    padding: 5px;
 }
 
 #overlay {
